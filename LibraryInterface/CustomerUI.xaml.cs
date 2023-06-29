@@ -20,13 +20,10 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ItemCollection = LibraryLogic.ItemCollection;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Library_Project01
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class CustomerUI : Page
     {
        
@@ -56,20 +53,7 @@ namespace Library_Project01
         }
 
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-         
-
-        }
-        private void SrcTextChange(object sender, TextChangedEventArgs e)
-        {
-
-        }
+     
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -130,15 +114,6 @@ namespace Library_Project01
             }
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void addBTN_Click(object sender, RoutedEventArgs e)
         {
@@ -211,20 +186,11 @@ namespace Library_Project01
             Frame.Navigate(typeof(LogInPage), _librarian);
         }
 
-        private void Frame1_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
-
         private void MessagesTap(object sender, TappedRoutedEventArgs e)
         {
             MessageDialog msg = new MessageDialog($"{_librarian.tempCustomer.customerMessage}", "Message's from admin");
             msg.ShowAsync();
         }
 
-        private void SearchTap(object sender, TappedRoutedEventArgs e)
-        {
-  
-        }
     }
 }
