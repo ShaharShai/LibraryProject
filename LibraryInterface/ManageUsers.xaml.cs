@@ -18,13 +18,10 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Library_Project01
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class ManageUsers : Page
     {
         Manager _librarian;
@@ -48,7 +45,6 @@ namespace Library_Project01
 
             foreach (Customer item in _librarian.customers)
             {
-
                 UsersList.Items.Add(item.userName);
             }
 
