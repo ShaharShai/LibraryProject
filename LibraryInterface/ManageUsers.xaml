@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Library_Project01.ManageUsers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Library_Project01"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="1150" Height="850"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Width="1500" Height="850">
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+                <GradientStop Color="#FF2A8BCA" Offset="1"/>
+                <GradientStop Color="#FF35B0B0" Offset="0"/>
+                <GradientStop Color="#FF253743" Offset="1"/>
+            </LinearGradientBrush>
+
+        </Grid.Background>
+        <ListBox x:Name="UsersList" Margin="389,118,400,124"  Background="#FF1D6170" SelectionChanged="SelectionUser"/>
+        <TextBox x:Name="SearchBox1" HorizontalAlignment="Left" Margin="86,118,0,0" TextWrapping="Wrap" PlaceholderText="Search Users" VerticalAlignment="Top" Height="50" Width="182" FontWeight="Bold" FontSize="18" TextChanged="SearchBox1_TextChanged" CornerRadius="12">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3B92AB"/>
+                    <GradientStop Color="#FF1D6170" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="MessageBox1" HorizontalAlignment="Left" Margin="98,207,0,0" TextWrapping="Wrap" PlaceholderText="Write a Message" VerticalAlignment="Top" Height="187" Width="160" CornerRadius="12"/>
+        <Button Content="Send Message" Margin="116,425,0,0" VerticalAlignment="Top" Height="43" Width="124" Click="Button_Click" CornerRadius="12"/>
+        <Button x:Name="DelUserBtn" Content="Delete User" Margin="116,524,0,0" VerticalAlignment="Top" Height="39" Width="124" Click="DelUserBtn_Click" CornerRadius="12"/>
+
+
+    </Grid>
+
+</Page>
