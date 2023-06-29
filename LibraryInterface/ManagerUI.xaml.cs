@@ -19,13 +19,10 @@ using Windows.UI.Popups;
 using System.Text;
 using DocumentFormat.OpenXml.Bibliography;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Library_Project01
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class ManagerUI : Page
     {
         Manager _librarian;
@@ -42,10 +39,6 @@ namespace Library_Project01
         public ManagerUI(Manager librarian)
         {
             this._librarian = librarian;
-            foreach (Genre genre in (Genre[])Enum.GetValues(typeof(Genre)))
-            {
-
-            }
 
         }
 
@@ -60,29 +53,6 @@ namespace Library_Project01
             }
         }
 
-   
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-
-        }
-
-        private void AddBookBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-
-        }
-
-        private void BtnDelete_Click(object sender, RoutedEventArgs e)
-        {
-  
-        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -167,39 +137,6 @@ namespace Library_Project01
             Report.ShowAsync();
         }
 
-        private void NavSelection(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
-        {
-            //var navItemTag = args.SelectedItemContainer.Tag.ToString();
-
-            //if(args.IsSettingsSelected) { }
-
-           
-            //if(navItemTag.Equals("HomeNav"))
-            //{
-            //    Frame.Navigate(typeof(LogInPage), _librarian);
-            //}
-                //NavigationViewItem item = args.SelectedItem as NavigationViewItem;
-                //switch (item.Tag.ToString())
-                //{
-                //    case "HomeNav":
-                //        Frame.Navigate(typeof(LogInPage), _librarian);
-                //        break;
-
-                //    case "AddNav":
-                //        break;
-
-                //    case "EditNav":
-                //        break;
-
-                //    case "ManageNav":
-                //        break;
-
-                //    case "DialyReportNav":
-                //        Report();
-                //        break;
-                //        default: break; 
-                //}
-        }
 
         private void HomeNavTap(object sender, TappedRoutedEventArgs e)
         {
@@ -229,20 +166,6 @@ namespace Library_Project01
         private void DiscountTap(object sender, TappedRoutedEventArgs e)
         {
             Frame1.Navigate(typeof(Discount_Page), _librarian);
-        }
-
-        private void SrcTextChange(object sender, TextChangedEventArgs e)
-        {
-       
-        }
-
-        private void SrcTextChanging(TextBox sender, TextBoxTextChangingEventArgs args)
-        {
-          
-
-
-
-
         }
 
 
