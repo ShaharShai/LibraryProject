@@ -17,13 +17,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Library_Project01
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class UserCartUI : Page
     {
         Manager _librarian;
@@ -43,7 +39,6 @@ namespace Library_Project01
                 _librarian = param.Item1;
                 isNewItem = param.Item2;
                 sharedUI = new SharedUIFunctions(_librarian);
-                //sharedUI.Refresh(ManagerListBox);
                 if (isNewItem)
                 {
                     returnItemBtn.Visibility = Visibility.Collapsed;
