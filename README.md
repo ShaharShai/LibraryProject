@@ -1,7 +1,10 @@
 # Library Project
 
-[![Video Demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://player.vimeo.com/video/840830805?h=7e9c52621b)
+https://github.com/ShaharShai/LibraryProject/assets/138113516/1b313986-621b-49c2-9c7e-7e470249bb06
 
+Full Video:
+
+https://vimeo.com/840830805
 
 This project is a library management system developed using C# .NET and follows the principles of Object-Oriented Programming (OOP). It focuses on maintaining a separation between the logic and the user interface for enhanced modularity and maintainability.
 
