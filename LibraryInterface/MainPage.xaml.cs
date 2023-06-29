@@ -15,17 +15,11 @@ using Windows.UI.Xaml.Navigation;
 using LibraryLogic;
 using ItemCollection = LibraryLogic.ItemCollection;
 
-
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace Library_Project01
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class MainPage : Page
     {
-        //static ItemCollection collection1 = new ItemCollection();
         Manager librarian;
         public MainPage()
         {
@@ -33,7 +27,6 @@ namespace Library_Project01
             this.InitializeComponent();
 
         }
-
 
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
