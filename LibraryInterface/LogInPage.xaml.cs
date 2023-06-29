@@ -21,13 +21,10 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ItemCollection = LibraryLogic.ItemCollection;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Library_Project01
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class LogInPage : Page
     {
         Manager librarian;
@@ -97,11 +94,6 @@ namespace Library_Project01
             }
         }
 
-        public LogInPage(ItemCollection itemCollection1)
-        {
-
-        }
-
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -153,33 +145,6 @@ namespace Library_Project01
             }
 
         }
-
-        private void StartBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void PasswordBox_CharacterReceived(UIElement sender, CharacterReceivedRoutedEventArgs args)
-        {
-
-        }
-
-        private void PasswordBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void RegisterNameBox_TextChanged(object sender, TextChangedEventArgs e)
-        { 
-
-        }
-
-        private void NameHolding(object sender, HoldingRoutedEventArgs e)
-        {
-
-        }
-
-  
 
         private void UsernameFocus(object sender, RoutedEventArgs e)
         {
